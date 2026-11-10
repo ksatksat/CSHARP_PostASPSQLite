@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="card">
+    <h1>HTTP POST Demo</h1>
+    <p>
+        This app made with ASP NET Core, MVC, vanilla HTML, CSS, JS, SQLite.
+        Type a message and press the button to POST it to the database.
+    </p>
+
+    <form id="message-form" autocomplete="off">
+        <input id="message-input" type="text" maxlength="200"
+               placeholder="Write your message..." required />
+        <button id="send-btn" type="submit">Send (POST)</button>
+    </form>
+
+    <div id="status" class="status" aria-live="polite"></div>
+
+    <h2>Saved in database</h2>
+    <ul id="message-list" class="message-list">
+        <li class="empty">No messages yet.</li>
+    </ul>
+</div>
